@@ -1,0 +1,21 @@
+{
+  "name": "vovymaster-theme",
+  "displayName": "Vovymaster Theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "*"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vovymaster Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Vovymaster Theme-color-theme.json"
+      }
+    ]
+  }
+}
