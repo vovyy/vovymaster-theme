@@ -1,241 +1,188 @@
 {
-	"name": "Vovymaster Theme",
-    "colors": {
-  
-  // ActivityBar (boční panel)
-  "activityBar.activeFocusBorder": "#e6db74",
-  "activityBar.background": "#161613",
-  "activityBar.border": "#161613",
-  "activityBar.foreground": "#c0c1b5",
-  "activityBar.inactiveForeground": "#57584f",
-  "activityBarBadge.background": "#e6db74",
-  "activityBarBadge.foreground": "#272822",
+  "name": "Vovymaster Theme",
+  "type": "dark",
 
-  // SideBar
-  "sideBar.background": "#1d1e19",
-  "sideBar.border": "#161613",
-  "sideBar.foreground": "#919288",
+  "colors": {
+    "activityBar.activeFocusBorder": "#e6db74",
+    "activityBar.background": "#161613",
+    "activityBar.border": "#161613",
+    "activityBar.foreground": "#c0c1b5",
+    "activityBar.inactiveForeground": "#57584f",
+    "activityBarBadge.background": "#e6db74",
+    "activityBarBadge.foreground": "#272822",
 
-  // StatusBar
-  "statusBar.background": "#1d1e19",
-  "statusBar.border": "#161613",
-  "statusBar.foreground": "#6e7066",
-  "statusBarItem.hoverBackground": "#1d1e19",
-  "statusBarItem.hoverForeground": "#fdfff1",
+    "sideBar.background": "#1d1e19",
+    "sideBar.border": "#161613",
+    "sideBar.foreground": "#919288",
 
-  // Background & Text
-  "editor.background": "#201D1D",
-  "editor.foreground": "#fdfff1",
-  "editor.lineHighlightBackground": "#fdfff10c",
+    "statusBar.background": "#1d1e19",
+    "statusBar.border": "#161613",
+    "statusBar.foreground": "#6e7066",
+    "statusBarItem.hoverBackground": "#1d1e19",
+    "statusBarItem.hoverForeground": "#fdfff1",
 
-  // Cursor & Selection
-  "editorCursor.foreground": "#fdfff1",
-  "editor.selectionBackground": "#c0c1b526",
+    "editor.background": "#201D1D",
+    "editor.foreground": "#fdfff1",
+    "editor.lineHighlightBackground": "#fdfff10c",
 
-  // Gutter (čísla řádků)
-  "editorGutter.background": "#272822",
-  "editorLineNumber.foreground": "#57584f",
-  "editorLineNumber.activeForeground": "#c0c1b5",
+    "editorCursor.foreground": "#fdfff1",
+    "editor.selectionBackground": "#c0c1b526",
 
-  // Bracket matching
-  "editorBracketMatch.background": "#272822",
-  "editorBracketHighlight.foreground1": "#f92672",
-  "editorBracketHighlight.foreground2": "#fd971f",
-  "editorBracketHighlight.foreground3": "#e6db74",
-  "editorBracketHighlight.foreground4": "#a6e22e",
-  "editorBracketHighlight.foreground5": "#66d9ef",
-  "editorBracketHighlight.foreground6": "#ae81ff",
+    "editorGutter.background": "#272822",
+    "editorLineNumber.foreground": "#57584f",
+    "editorLineNumber.activeForeground": "#c0c1b5",
 
-	// Buttons
-  "button.background": "#3b3c35",
-  "button.foreground": "#fdfff1",
-  "button.hoverBackground": "#57584f",
+    "editorBracketMatch.background": "#272822",
+    "editorBracketHighlight.foreground1": "#f92672",
+    "editorBracketHighlight.foreground2": "#fd971f",
+    "editorBracketHighlight.foreground3": "#e6db74",
+    "editorBracketHighlight.foreground4": "#a6e22e",
+    "editorBracketHighlight.foreground5": "#66d9ef",
+    "editorBracketHighlight.foreground6": "#ae81ff",
 
-  // Inputs
-  "input.background": "#3b3c35",
-  "input.foreground": "#fdfff1",
-  "input.border": "#57584f",
+    "button.background": "#3b3c35",
+    "button.foreground": "#fdfff1",
+    "button.hoverBackground": "#57584f",
 
-  // Dropdowns
-  "dropdown.background": "#3b3c35",
-  "dropdown.foreground": "#919288",
-  "dropdown.border": "#57584f",
-  // Debug
-  "debugIcon.breakpointForeground": "#f92672",
-  "debugIcon.breakpointCurrentStackframeForeground": "#e6db74",
-  "debugExceptionWidget.background": "#3b3c35",
+    "input.background": "#3b3c35",
+    "input.foreground": "#fdfff1",
+    "input.border": "#57584f",
 
-  // Git decorations
-  "gitDecoration.addedResourceForeground": "#a6e22e",
-  "gitDecoration.deletedResourceForeground": "#f92672",
-  "gitDecoration.modifiedResourceForeground": "#e6db74",
-  "gitDecoration.untrackedResourceForeground": "#c0c1b5",
-	},
+    "dropdown.background": "#3b3c35",
+    "dropdown.foreground": "#919288",
+    "dropdown.border": "#57584f",
+
+    "debugIcon.breakpointForeground": "#f92672",
+    "debugIcon.breakpointCurrentStackframeForeground": "#e6db74",
+    "debugExceptionWidget.background": "#3b3c35",
+
+    "gitDecoration.addedResourceForeground": "#a6e22e",
+    "gitDecoration.deletedResourceForeground": "#f92672",
+    "gitDecoration.modifiedResourceForeground": "#e6db74",
+    "gitDecoration.untrackedResourceForeground": "#c0c1b5"
+  },
 
   "tokenColors": [
-    // ═══════════════════════════════════════════════════════════════
-    // 1️⃣ COMMENTS (komentáře všech typů)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "comment",
-        "comment.block",           // /* blok komentář */
-        "comment.line",            // // řádkový komentář
-        "comment.block.documentation" // /** JSDoc/PHPDoc */
-      ],
-      "settings": {
-        "foreground": "#647244",
-        "fontStyle": "italic"
-      }
+      "scope": ["comment"],
+      "settings": { "foreground": "#647244", "fontStyle": "italic" }
+    },
+    {
+      "scope": ["comment.block.html"],
+      "settings": { "foreground": "#647244", "fontStyle": "italic" }
+    },
+    {
+      "scope": ["comment.line.double-slash.js", "comment.line.double-slash.ts"],
+      "settings": { "foreground": "#6e7066", "fontStyle": "italic" }
     },
 
-    // ═══════════════════════════════════════════════════════════════
-    // 2️⃣ CONSTANTS & LITERALS (konstanty, čísla)
-    // ═══════════════════════════════════════════════════════════════
+    {
+      "scope": ["string"],
+      "settings": { "foreground": "#98E774" }
+    },
+    {
+      "scope": ["string.quoted.attribute-value.html"],
+      "settings": { "foreground": "#FF6B9D" }
+    },
     {
       "scope": [
-        "constant.numeric",        // 123, 3.14
-        "constant.language",       // true, false, null
-        "constant.character",      // 'a', "\n"
-        "constant.other.symbol"    // :symbol (Ruby)
+        "string.quoted.single.js",
+        "string.quoted.double.js",
+        "string.template.js",
+        "string.quoted.single.ts",
+        "string.quoted.double.ts",
+        "string.template.ts"
       ],
-      "settings": { "foreground": "#FFF080" }
+      "settings": { "foreground": "#e6db74" }
     },
 
-    // ═══════════════════════════════════════════════════════════════
-    // 3️⃣ FUNCTIONS & CALLS (funkce, metody)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "entity.name.function",    // function myFunc()
-        "support.function",        // console.log(), Array.map()
-        "meta.function-call"       // volání funkcí
-      ],
-      "settings": { "foreground": "#83B422" }
+      "scope": ["entity.name.tag.html"],
+      "settings": { "foreground": "#E20355" }
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 4️⃣ CLASSES & TYPES (třídy, typy)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "entity.name.class",       // class MyClass
-        "entity.name.type",        // interface, type MyType
-        "storage.type",            // class, interface, type
-        "support.class"            // built-in classy
-      ],
-      "settings": {
-        "foreground": "#66d9ef",
-        "fontStyle": "italic"
-      }
-    },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 5️⃣ KEYWORDS & OPERATORS (klíčová slova)
-    // ═══════════════════════════════════════════════════════════════
-    {
-      "scope": [
-        "keyword",                 // if, else, for, while
-        "keyword.control",         // if, try, catch, return
-        "keyword.operator",        // &&, ||, ==, += 
-        "storage.modifier"         // public, private, static
-      ],
-      "settings": { "foreground": "#9980FF" }
-    },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 6️⃣ STRINGS & TEMPLATES (řetězce)
-    // ═══════════════════════════════════════════════════════════════
-    {
-      "scope": [
-        "string.quoted.single",    // 'single quotes'
-        "string.quoted.double",    // "double quotes"
-        "string.template"          // `backticks`
-      ],
+      "scope": ["entity.other.attribute-name.html"],
       "settings": { "foreground": "#e6be74" }
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 7️⃣ VARIABLES (proměnné)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "variable",                // let x = 1
-        "variable.parameter",      // function(a, b)
-        "variable.other"           // this, super
-      ],
+      "scope": ["meta.attribute-with-value.class.html string"],
+      "settings": { "foreground": "#FF6B9D" }
+    },
+    {
+      "scope": ["meta.attribute-with-value.id.html string"],
+      "settings": { "foreground": "#FF6B9D" }
+    },
+
+    {
+      "scope": ["entity.name.function"],
+      "settings": { "foreground": "#a5b488" }
+    },
+    {
+      "scope": ["entity.name.function.js", "entity.name.function.ts"],
+      "settings": { "foreground": "#709429" }
+    },
+    {
+      "scope": ["support.function.jquery"],
+      "settings": { "foreground": "#ff9f1c" }
+    },
+
+    {
+      "scope": ["variable"],
       "settings": { "foreground": "#fdfff1" }
     },
-// ═══════════════════════════════════════════════════════════════
-// 8️⃣ HTML/CSS TAGS & ATTRIBUTES
-// ═══════════════════════════════════════════════════════════════
-// TAGY: <div>, <span>
-{
-  "scope": ["entity.name.tag"],
-  "settings": { "foreground": "#E20355" }
-},
-
-// ATRIBUTY: class=, id=, style=
-{
-  "scope": [
-    "entity.other.attribute-name",     // class, id, data-*
-    "entity.other.attribute-name.id"   // id="main"
-  ],
-  "settings": { "foreground": "#98E774" }
-},
-
-// HODNOTY atributů: "test", "main", "block"
-{
-  "scope": [
-    "meta.attribute-with-value.class string",           // class="test"
-    "meta.attribute.class.html string",                 // class="block"
-    "meta.attribute-with-value.id string",              // id="main"
-    "string.quoted.attribute-value.html"                // hodnoty v HTML
-  ],
-  "settings": { 
-    "foreground": "#FF6B9D"  // SVĚTLĚJŠÍ pro hodnoty!
-  }
-},
-
-    // ═══════════════════════════════════════════════════════════════
-    // 9️⃣ PUNCTUATION & BRACKETS (závorky, čárky)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "punctuation",
-        "meta.brace.round",        // ()
-        "meta.brace.square",       // []
-        "meta.brace.curly",        // {}
-        "punctuation.separator"    // ,
-      ],
-      "settings": { "foreground": "#bfc2ab" }
+      "scope": ["variable.parameter.js", "variable.parameter.ts"],
+      "settings": { "foreground": "#fdfff1" }
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 🔟 PHP SPECIFICS ($variables, echo...)
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "variable.other.php",      // $user, $_GET
-        "support.function.php"     // echo, print_r
-      ],
+      "scope": ["variable.other.php"],
       "settings": { "foreground": "#c78800" }
     },
 
-    // ═══════════════════════════════════════════════════════════════
-    // 1️⃣1️⃣ ERRORS & WARNINGS
-    // ═══════════════════════════════════════════════════════════════
     {
-      "scope": [
-        "invalid",                 // chyby v syntaxi
-        "invalid.deprecated"       // zastaralé funkce
-      ],
-      "settings": {
-        "foreground": "#f92672",
-        "fontStyle": "italic underline"
-      }
-    }
+      "scope": ["keyword"],
+      "settings": { "foreground": "#9980FF" }
+    },
+    {
+      "scope": ["keyword.js", "keyword.ts"],
+      "settings": { "foreground": "#f92672" }
+    },
+
+    // ================= CSS =================
+
+    {
+      "scope": ["entity.name.tag.css"],
+      "settings": { "foreground": "#E20355" }
+    },
+    {
+      "scope": ["entity.other.attribute-name.class.css"],
+      "settings": { "foreground": "#98E774" }
+    },
+    {
+      "scope": ["entity.other.attribute-name.id.css"],
+      "settings": { "foreground": "#e6be74" }
+    },
+    {
+      "scope": ["support.type.property-name.css"],
+      "settings": { "foreground": "#72d2f0" }
+    },
+    {
+      "scope": ["support.constant.property-value.css"],
+      "settings": { "foreground": "#98E774" }
+    },
+    {
+      "scope": ["constant.numeric.css", "keyword.other.unit.css"],
+      "settings": { "foreground": "#e6db74" }
+    },
+    {
+      "scope": ["constant.other.color.rgb-value.css", "support.function.color.css"],
+      "settings": { "foreground": "#ff9f1c" }
+    },
+    {
+      "scope": ["entity.other.pseudo-class.css"],
+      "settings": { "foreground": "#9980FF" }
+    },
+    
+    
   ]
-
-
 }
