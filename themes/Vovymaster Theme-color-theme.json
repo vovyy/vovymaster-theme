@@ -1,7 +1,6 @@
 {
-  "name": "Vovymaster Theme",
+  "name": "Vovymaster Monokai Classic",
   "type": "dark",
-
   "colors": {
     "activityBar.activeFocusBorder": "#e6db74",
     "activityBar.background": "#161613",
@@ -10,28 +9,20 @@
     "activityBar.inactiveForeground": "#57584f",
     "activityBarBadge.background": "#e6db74",
     "activityBarBadge.foreground": "#272822",
-
     "sideBar.background": "#1d1e19",
     "sideBar.border": "#161613",
     "sideBar.foreground": "#919288",
-
     "statusBar.background": "#1d1e19",
     "statusBar.border": "#161613",
     "statusBar.foreground": "#6e7066",
-    "statusBarItem.hoverBackground": "#1d1e19",
-    "statusBarItem.hoverForeground": "#fdfff1",
-
     "editor.background": "#201D1D",
     "editor.foreground": "#fdfff1",
     "editor.lineHighlightBackground": "#fdfff10c",
-
     "editorCursor.foreground": "#fdfff1",
     "editor.selectionBackground": "#c0c1b526",
-
     "editorGutter.background": "#272822",
     "editorLineNumber.foreground": "#57584f",
     "editorLineNumber.activeForeground": "#c0c1b5",
-
     "editorBracketMatch.background": "#272822",
     "editorBracketHighlight.foreground1": "#f92672",
     "editorBracketHighlight.foreground2": "#fd971f",
@@ -39,36 +30,27 @@
     "editorBracketHighlight.foreground4": "#a6e22e",
     "editorBracketHighlight.foreground5": "#66d9ef",
     "editorBracketHighlight.foreground6": "#ae81ff",
-
     "button.background": "#3b3c35",
     "button.foreground": "#fdfff1",
     "button.hoverBackground": "#57584f",
-
     "input.background": "#3b3c35",
     "input.foreground": "#fdfff1",
     "input.border": "#57584f",
-
     "dropdown.background": "#3b3c35",
     "dropdown.foreground": "#919288",
     "dropdown.border": "#57584f",
-
     "debugIcon.breakpointForeground": "#f92672",
     "debugIcon.breakpointCurrentStackframeForeground": "#e6db74",
     "debugExceptionWidget.background": "#3b3c35",
-
     "gitDecoration.addedResourceForeground": "#a6e22e",
     "gitDecoration.deletedResourceForeground": "#f92672",
     "gitDecoration.modifiedResourceForeground": "#e6db74",
     "gitDecoration.untrackedResourceForeground": "#c0c1b5"
   },
-
   "tokenColors": [
+    // ================= Comments =================
     {
-      "scope": ["comment"],
-      "settings": { "foreground": "#647244", "fontStyle": "italic" }
-    },
-    {
-      "scope": ["comment.block.html"],
+      "scope": ["comment", "comment.block", "comment.line"],
       "settings": { "foreground": "#647244", "fontStyle": "italic" }
     },
     {
@@ -76,6 +58,7 @@
       "settings": { "foreground": "#6e7066", "fontStyle": "italic" }
     },
 
+    // ================= Strings =================
     {
       "scope": ["string"],
       "settings": { "foreground": "#98E774" }
@@ -96,6 +79,7 @@
       "settings": { "foreground": "#e6db74" }
     },
 
+    // ================= HTML =================
     {
       "scope": ["entity.name.tag.html"],
       "settings": { "foreground": "#E20355" }
@@ -113,6 +97,7 @@
       "settings": { "foreground": "#FF6B9D" }
     },
 
+    // ================= JS / TS =================
     {
       "scope": ["entity.name.function"],
       "settings": { "foreground": "#a5b488" }
@@ -125,7 +110,6 @@
       "scope": ["support.function.jquery"],
       "settings": { "foreground": "#ff9f1c" }
     },
-
     {
       "scope": ["variable"],
       "settings": { "foreground": "#fdfff1" }
@@ -138,7 +122,6 @@
       "scope": ["variable.other.php"],
       "settings": { "foreground": "#c78800" }
     },
-
     {
       "scope": ["keyword"],
       "settings": { "foreground": "#9980FF" }
@@ -148,41 +131,81 @@
       "settings": { "foreground": "#f92672" }
     },
 
-    // ================= CSS =================
-
+    // ================= CSS + LESS =================
     {
-      "scope": ["entity.name.tag.css"],
+      "scope": [
+        "entity.name.tag.css",
+        "entity.name.tag.less"
+      ],
       "settings": { "foreground": "#E20355" }
     },
     {
-      "scope": ["entity.other.attribute-name.class.css"],
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.class.less"
+      ],
       "settings": { "foreground": "#98E774" }
     },
     {
-      "scope": ["entity.other.attribute-name.id.css"],
+      "scope": [
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.id.less"
+      ],
       "settings": { "foreground": "#e6be74" }
     },
     {
-      "scope": ["support.type.property-name.css"],
+      "scope": [
+        "support.type.property-name.css",
+        "support.type.property-name.less"
+      ],
       "settings": { "foreground": "#72d2f0" }
     },
     {
-      "scope": ["support.constant.property-value.css"],
+      "scope": [
+        "support.constant.property-value.css",
+        "support.constant.property-value.less"
+      ],
       "settings": { "foreground": "#98E774" }
     },
     {
-      "scope": ["constant.numeric.css", "keyword.other.unit.css"],
-      "settings": { "foreground": "#e6db74" }
-    },
+  "scope": ["constant.numeric.css"],
+  "settings": { "foreground": "#e6db74" }  // čísla zůstanou zlatá
+},
+{
+  "scope": ["keyword.other.unit.css"],
+  "settings": { "foreground": "#9980FF" } // jednotky mají světle modrou
+},
     {
-      "scope": ["constant.other.color.rgb-value.css", "support.function.color.css"],
+  "scope": ["constant.numeric.less"],
+  "settings": { "foreground": "#e6db74" }  // čísla zůstanou zlatá
+},
+{
+  "scope": ["keyword.other.unit.less"],
+  "settings": { "foreground": "#9980FF" } // jednotky mají světle modrou
+},
+    {
+      "scope": [
+        "constant.other.color.rgb-value.css",
+        "support.function.color.css",
+        "constant.other.color.rgb-value.less",
+        "support.function.color.less"
+      ],
       "settings": { "foreground": "#ff9f1c" }
     },
     {
-      "scope": ["entity.other.pseudo-class.css"],
+      "scope": [
+        "entity.other.pseudo-class.css",
+        "entity.other.pseudo-class.less"
+      ],
       "settings": { "foreground": "#9980FF" }
     },
-    
-    
+    {
+      "scope": ["variable.other.less"],
+      "settings": { "foreground": "#fdfff1" }
+    },
+    {
+      "scope": ["keyword.other.less"],
+      "settings": { "foreground": "#9980FF" }
+    }
   ]
 }
